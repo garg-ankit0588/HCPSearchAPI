@@ -1,0 +1,4 @@
+D:\Projects\HCPSearchAPI\HCPModels\bin\Debug\HCPModels.dll
+D:\Projects\HCPSearchAPI\HCPModels\bin\Debug\HCPModels.pdb
+D:\Projects\HCPSearchAPI\HCPModels\obj\Debug\HCPModels.dll
+D:\Projects\HCPSearchAPI\HCPModels\obj\Debug\HCPModels.pdb

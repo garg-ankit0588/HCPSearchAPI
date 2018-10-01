@@ -1,0 +1,9 @@
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPService.dll
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPService.pdb
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPModels.dll
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.ValueTuple.dll
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPModels.pdb
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.ValueTuple.xml
+D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.csprojResolveAssemblyReference.cache
+D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.dll
+D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.pdb

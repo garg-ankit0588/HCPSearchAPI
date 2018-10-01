@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HCPDataModelStoreContainer" CdmEntityContainer="HCPDataEntities">
+    <EntitySetMapping Name="HCPDatas">
+      <EntityTypeMapping TypeName="HCPDataModel.HCPData">
+        <MappingFragment StoreEntitySet="HCPData">
+          <ScalarProperty Name="HCPId" ColumnName="HCPId" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

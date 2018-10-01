@@ -1,0 +1,12 @@
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\HCPData.dll.config
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\HCPData.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\HCPData.pdb
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\DelegateDecompiler.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\DelegateDecompiler.EntityFramework.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\EntityFramework.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\Mono.Reflection.dll
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\EntityFramework.xml
+D:\Projects\HCPSearchAPI\HCPData\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\HCPSearchAPI\HCPData\obj\Debug\HCPData.dll
+D:\Projects\HCPSearchAPI\HCPData\obj\Debug\HCPData.pdb
