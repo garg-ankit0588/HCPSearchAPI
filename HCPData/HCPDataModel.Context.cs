@@ -13,9 +13,9 @@ namespace HCPData
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class HCPData : DbContext
+    public partial class HCPDataEntities : DbContext
     {
-        public HCPData()
+        public HCPDataEntities()
             : base("name=HCPDataEntities")
         {
         }

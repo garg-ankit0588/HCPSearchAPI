@@ -5,21 +5,21 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using HCPModels;
+using HCPService.Interfaces;
+
 namespace HCPSearchAPI.Controllers
 {
     public class ValuesController : ApiController
     {
-        IList<HCPModel> hcpList = new List<HCPModel>
+        private readonly IHCPService _hcpService;
+        public ValuesController(IHCPService hcpService)
         {
-            new HCPModel()
-            {
-                HCPId = 1, FirstName ="john", LastName="Doe", Speciality="MBBS"
-            }
-        };
+            _hcpService = hcpService;
+        }
         // GET api/values
-        public IList<HCPModel> Get()
+        public IEnumerable<HCPModel> Get()
         {
-            return hcpList;
+            return _hcpService.GetAllHCPsResult();
         }
 
         // GET api/values/5

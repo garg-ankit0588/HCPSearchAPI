@@ -9,6 +9,6 @@ namespace HCPService.Interfaces
 {
     public interface IHCPService
     {
-        IList<HCPModel> GetAllHCPs();
+        IEnumerable<HCPModel> GetAllHCPsResult();
     }
 }
