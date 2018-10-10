@@ -1,3 +1,4 @@
+D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.csprojResolveAssemblyReference.cache
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPService.dll.config
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPService.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPService.pdb
@@ -6,6 +7,7 @@ D:\Projects\HCPSearchAPI\HCPService\bin\Debug\EntityFramework.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPData.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPModels.dll
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPRepositories.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Newtonsoft.Json.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.Net.Http.Formatting.dll
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.Web.Http.dll
@@ -22,6 +24,7 @@ D:\Projects\HCPSearchAPI\HCPService\bin\Debug\EntityFramework.xml
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPData.pdb
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPModels.pdb
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\HCPRepositories.pdb
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Newtonsoft.Json.xml
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.Net.Http.Formatting.xml
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\System.Web.Http.xml
@@ -32,6 +35,7 @@ D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Unity.Interception.pdb
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Unity.Interception.Configuration.pdb
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Unity.RegistrationByConvention.pdb
 D:\Projects\HCPSearchAPI\HCPService\bin\Debug\Unity.ServiceLocation.pdb
-D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.csprojResolveAssemblyReference.cache
 D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.dll
 D:\Projects\HCPSearchAPI\HCPService\obj\Debug\HCPService.pdb
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\AutoMapper.dll
+D:\Projects\HCPSearchAPI\HCPService\bin\Debug\AutoMapper.xml

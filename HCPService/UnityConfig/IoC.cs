@@ -9,6 +9,10 @@ using HCPService.Interfaces;
 using HCPService.Implementations;
 using HCPService.UnityConfig;
 using Unity.WebApi;
+using HCPRepositories.Interfaces;
+using HCPModels;
+using HCPRepositories.Implementations;
+using HCPData;
 
 namespace HCPService.UnityConfig
 {
@@ -19,8 +23,10 @@ namespace HCPService.UnityConfig
             var container = new UnityContainer();
             container.RegisterType<IHCPService, HCPServices>(new Unity.Lifetime.SingletonLifetimeManager());
 
+
             config.DependencyResolver = new UnityResolver(container);
             config.DependencyResolver = new UnityDependencyResolver(container);
+            AutoMapperConfiguration.Initialize();
         }
     }
 }
