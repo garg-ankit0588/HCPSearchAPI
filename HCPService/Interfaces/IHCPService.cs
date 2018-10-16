@@ -10,5 +10,6 @@ namespace HCPService.Interfaces
     public interface IHCPService
     {
         IEnumerable<HCPModel> GetAllHCPsResult();
+        HCPModel GetHCPResultById(int Id);
     }
 }

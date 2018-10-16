@@ -5,11 +5,35 @@
       <PropertyRef Name="HCPId" />
     </Key>
     <Property Name="HCPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="First_Name" Type="nvarchar" MaxLength="50" />
-    <Property Name="Last_Name" Type="nvarchar" MaxLength="50" />
-    <Property Name="Speciality" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="25" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="25" />
+    <Property Name="SpecialityId" Type="int" />
   </EntityType>
+  <EntityType Name="SpecialityMaster">
+    <Key>
+      <PropertyRef Name="SpecialityId" />
+    </Key>
+    <Property Name="SpecialityId" Type="int" Nullable="false" />
+    <Property Name="SpecialityName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__HCPData__Special__25869641">
+    <End Role="SpecialityMaster" Type="Self.SpecialityMaster" Multiplicity="0..1" />
+    <End Role="HCPData" Type="Self.HCPData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SpecialityMaster">
+        <PropertyRef Name="SpecialityId" />
+      </Principal>
+      <Dependent Role="HCPData">
+        <PropertyRef Name="SpecialityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="HCPDataModelStoreContainer">
     <EntitySet Name="HCPData" EntityType="Self.HCPData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpecialityMaster" EntityType="Self.SpecialityMaster" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__HCPData__Special__25869641" Association="Self.FK__HCPData__Special__25869641">
+      <End Role="SpecialityMaster" EntitySet="SpecialityMaster" />
+      <End Role="HCPData" EntitySet="HCPData" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

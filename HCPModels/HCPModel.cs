@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace HCPModels
 {
-    public class HCPModel
+    public class HCPModel: SpecialityModel
     {
         public int HCPId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Speciality { get; set; }
+        public SpecialityModel Speciality { get; set; }
     }
 }
     

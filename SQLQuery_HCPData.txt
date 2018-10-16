@@ -1,0 +1,32 @@
+CREATE TABLE SpecialityMaster
+(
+	SpecialityId INT PRIMARY KEY,
+	SpecialityName NVARCHAR(50)
+)
+
+INSERT INTO SpecialityMaster VALUES
+(1, 'MBBS'),
+(2, 'Cardiologist'),
+(3, 'Dermatologist'),
+(4, 'Neurosurgeon'),
+(5, 'Pediatrician')
+
+
+ALTER TABLE HCPData
+ADD FOREIGN KEY (SpecialityId)
+REFERENCES SpecialityMaster(SpecialityId)
+
+CREATE TABLE HCPData
+(
+	HCPId INT IDENTITY PRIMARY KEY NOT NULL,
+	FirstName NVARCHAR(25),
+	LastName NVARCHAR(25),
+	SpecialityId INT
+)
+INSERT INTO HCPData VALUES
+('John','Doe',1),
+('Dan','Brown',2),
+('Madhvi','Reddy',3),
+('Shawn','Parker',4),
+('Hugh','Jackman',5)
+

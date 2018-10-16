@@ -8,7 +8,7 @@ using HCPData;
 using HCPService.Interfaces;
 using HCPRepositories;
 using HCPModels;
-
+using AutoMapper;
 
 namespace HCPService.Implementations
 {
@@ -20,29 +20,53 @@ namespace HCPService.Implementations
         {
             try
             {
-                //var result = from h in hcpRepo.HCPDatas
-                //             select new HCPModel()
-                //             {
-                //                 HCPId = h.HCPId,
-                //                 FirstName = h.First_Name,
-                //                 LastName = h.Last_Name,
-                //                 Speciality = h.Speciality
-                //             };
-
-                //return result;
-                IEnumerable<HCPModel> result;
                 using (var unitOfWork = new UnitOfWork(new HCPDataEntities()))
                 {
-                    result = unitOfWork.HCPs.GetAll().Select(m => new HCPModel {
-                        HCPId = m.HCPId,
-                        FirstName = m.First_Name,
-                        LastName = m.Last_Name,
-                        Speciality = m.Speciality
-                    });
+                    //var result = unitOfWork.HCPs.GetAll().Select(m => new HCPModel
+                    //{
+                    //    HCPId = m.HCPId,
+                    //    FirstName = m.FirstName,
+                    //    LastName = m.LastName,
+                    //    SpecialityName = m.SpecialityMaster.SpecialityName
+                    //});
+
+                    var result = unitOfWork.HCPs.GetAll();
+                    result = Mapper.Map<HCPData.HCPData, IEnumerable<HCPModel>>(result);
+                    result = Mapper.Map<IEnumerable<HCPModel>, HCPData.HCPData>(result);
                 }
-                return result;
+                return null;
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public HCPModel GetHCPResultById(int Id)
+        {
+            try
+            {
+                ////var result = GetAllHCPsResult();
+                //result = result.Where(m => m.HCPId == Id);
+                //return (HCPModel)result;
+                ////return null;
+                using (var unitOfWork = new UnitOfWork(new HCPDataEntities()))
+                {
+                    var result = unitOfWork.HCPs.Get(Id);
+                    //var hcp = new HCPModel
+                    //{
+                    //    HCPId = result.HCPId,
+                    //};
+
+                    result  = Mapper.Map<HCPData.HCPData, HCPModel>(result);
+                    result = Mapper.Map< HCPModel, HCPData.HCPData>(result);
+                }
+
+                return null;
+
+
+            }
+            catch(Exception ex)
             {
                 throw ex;
             }

@@ -1,4 +1,3 @@
-D:\Projects\HCPSearchAPI\HCPSearchAPI\obj\Debug\HCPSearchAPI.csprojResolveAssemblyReference.cache
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\ApplicationInsights.config
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\roslyn\csc.exe
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -49,8 +48,9 @@ D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.RegistrationByConvention.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.ServiceLocation.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.WebApi.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\WebGrease.dll
-D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPData.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPRepositories.dll
+D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPData.dll
+D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\AutoMapper.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\EntityFramework.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\CommonServiceLocator.pdb
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPModels.pdb
@@ -81,10 +81,11 @@ D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.Interception.Configuration.pdb
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.RegistrationByConvention.pdb
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Unity.ServiceLocation.pdb
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\Antlr3.Runtime.pdb
-D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPData.pdb
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPRepositories.pdb
+D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\HCPData.pdb
+D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\AutoMapper.pdb
+D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\AutoMapper.xml
 D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\EntityFramework.xml
+D:\Projects\HCPSearchAPI\HCPSearchAPI\obj\Debug\HCPSearchAPI.csprojResolveAssemblyReference.cache
 D:\Projects\HCPSearchAPI\HCPSearchAPI\obj\Debug\HCPSearchAPI.dll
 D:\Projects\HCPSearchAPI\HCPSearchAPI\obj\Debug\HCPSearchAPI.pdb
-D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\AutoMapper.dll
-D:\Projects\HCPSearchAPI\HCPSearchAPI\bin\AutoMapper.xml

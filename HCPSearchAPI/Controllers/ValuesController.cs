@@ -19,13 +19,14 @@ namespace HCPSearchAPI.Controllers
         // GET api/values
         public IEnumerable<HCPModel> Get()
         {
+
             return _hcpService.GetAllHCPsResult();
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public HCPModel Get(int id)
         {
-            return "value";
+            return _hcpService.GetHCPResultById(id);
         }
 
         // POST api/values

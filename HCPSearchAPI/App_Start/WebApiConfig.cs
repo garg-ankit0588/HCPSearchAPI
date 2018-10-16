@@ -1,4 +1,5 @@
-﻿using HCPService.UnityConfig;
+﻿using HCPService.AutoMapper;
+using HCPService.UnityConfig;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,9 @@ namespace HCPSearchAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            AutoMapperConfiguration.Configure();
             IoC.IocRegister(config);
+           
         }
     }
 }

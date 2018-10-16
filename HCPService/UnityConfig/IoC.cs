@@ -26,7 +26,7 @@ namespace HCPService.UnityConfig
 
             config.DependencyResolver = new UnityResolver(container);
             config.DependencyResolver = new UnityDependencyResolver(container);
-            AutoMapperConfiguration.Initialize();
+            //AutoMapperConfiguration.Initialize();
         }
     }
 }

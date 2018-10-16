@@ -10,12 +10,36 @@
             <PropertyRef Name="HCPId" />
           </Key>
           <Property Name="HCPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="First_Name" Type="nvarchar" MaxLength="50" />
-          <Property Name="Last_Name" Type="nvarchar" MaxLength="50" />
-          <Property Name="Speciality" Type="nvarchar" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="25" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="25" />
+          <Property Name="SpecialityId" Type="int" />
         </EntityType>
+        <EntityType Name="SpecialityMaster">
+          <Key>
+            <PropertyRef Name="SpecialityId" />
+          </Key>
+          <Property Name="SpecialityId" Type="int" Nullable="false" />
+          <Property Name="SpecialityName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__HCPData__Special__25869641">
+          <End Role="SpecialityMaster" Type="Self.SpecialityMaster" Multiplicity="0..1" />
+          <End Role="HCPData" Type="Self.HCPData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SpecialityMaster">
+              <PropertyRef Name="SpecialityId" />
+            </Principal>
+            <Dependent Role="HCPData">
+              <PropertyRef Name="SpecialityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="HCPDataModelStoreContainer">
           <EntitySet Name="HCPData" EntityType="Self.HCPData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SpecialityMaster" EntityType="Self.SpecialityMaster" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__HCPData__Special__25869641" Association="Self.FK__HCPData__Special__25869641">
+            <End Role="SpecialityMaster" EntitySet="SpecialityMaster" />
+            <End Role="HCPData" EntitySet="HCPData" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -27,12 +51,38 @@
             <PropertyRef Name="HCPId" />
           </Key>
           <Property Name="HCPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Speciality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialityId" Type="Int32" />
+          <NavigationProperty Name="SpecialityMaster" Relationship="Self.FK__HCPData__Special__25869641" FromRole="HCPData" ToRole="SpecialityMaster" />
         </EntityType>
+        <EntityType Name="SpecialityMaster">
+          <Key>
+            <PropertyRef Name="SpecialityId" />
+          </Key>
+          <Property Name="SpecialityId" Type="Int32" Nullable="false" />
+          <Property Name="SpecialityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="HCPDatas" Relationship="Self.FK__HCPData__Special__25869641" FromRole="SpecialityMaster" ToRole="HCPData" />
+        </EntityType>
+        <Association Name="FK__HCPData__Special__25869641">
+          <End Role="SpecialityMaster" Type="Self.SpecialityMaster" Multiplicity="0..1" />
+          <End Role="HCPData" Type="Self.HCPData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SpecialityMaster">
+              <PropertyRef Name="SpecialityId" />
+            </Principal>
+            <Dependent Role="HCPData">
+              <PropertyRef Name="SpecialityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="HCPDataEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="HCPDatas" EntityType="Self.HCPData" />
+          <EntitySet Name="SpecialityMasters" EntityType="Self.SpecialityMaster" />
+          <AssociationSet Name="FK__HCPData__Special__25869641" Association="Self.FK__HCPData__Special__25869641">
+            <End Role="SpecialityMaster" EntitySet="SpecialityMasters" />
+            <End Role="HCPData" EntitySet="HCPDatas" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -44,9 +94,17 @@
             <EntityTypeMapping TypeName="HCPDataModel.HCPData">
               <MappingFragment StoreEntitySet="HCPData">
                 <ScalarProperty Name="HCPId" ColumnName="HCPId" />
-                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
-                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
-                <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SpecialityMasters">
+            <EntityTypeMapping TypeName="HCPDataModel.SpecialityMaster">
+              <MappingFragment StoreEntitySet="SpecialityMaster">
+                <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+                <ScalarProperty Name="SpecialityName" ColumnName="SpecialityName" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

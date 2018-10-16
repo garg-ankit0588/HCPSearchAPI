@@ -15,8 +15,10 @@ namespace HCPData
     public partial class HCPData
     {
         public int HCPId { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
-        public string Speciality { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Nullable<int> SpecialityId { get; set; }
+    
+        public virtual SpecialityMaster SpecialityMaster { get; set; }
     }
 }

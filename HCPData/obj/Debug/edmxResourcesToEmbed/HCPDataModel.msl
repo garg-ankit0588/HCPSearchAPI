@@ -5,9 +5,17 @@
       <EntityTypeMapping TypeName="HCPDataModel.HCPData">
         <MappingFragment StoreEntitySet="HCPData">
           <ScalarProperty Name="HCPId" ColumnName="HCPId" />
-          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
-          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
-          <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialityMasters">
+      <EntityTypeMapping TypeName="HCPDataModel.SpecialityMaster">
+        <MappingFragment StoreEntitySet="SpecialityMaster">
+          <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+          <ScalarProperty Name="SpecialityName" ColumnName="SpecialityName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

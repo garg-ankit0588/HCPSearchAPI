@@ -26,5 +26,6 @@ namespace HCPData
         }
     
         public virtual DbSet<HCPData> HCPDatas { get; set; }
+        public virtual DbSet<SpecialityMaster> SpecialityMasters { get; set; }
     }
 }

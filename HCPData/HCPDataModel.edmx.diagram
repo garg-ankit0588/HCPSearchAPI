@@ -4,8 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6762da3fe35a45dea26a6aaa4fec0852" Name="Diagram1">
-        <EntityTypeShape EntityType="HCPDataModel.HCPData" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="ff67ea38ef6747ef985db862422d69f9" Name="Diagram1">
+        <EntityTypeShape EntityType="HCPDataModel.HCPData" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HCPDataModel.SpecialityMaster" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="HCPDataModel.FK__HCPData__Special__25869641" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
